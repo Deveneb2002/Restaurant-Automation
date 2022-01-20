@@ -1,5 +1,20 @@
 # Restaurant-Automation
-By: We Serve You. A project for making restaurant service easier by automating ordering, billing, seating, etc.
+By: We Serve You. 
+
+Brian Chan
+manho.chan@wsu.edu 
+
+Subham Behera
+subham.behera@wsu.edu 
+
+Aidan Smith
+aidan.smith@wsu.edu 
+
+Olive Hehemann
+ava.hehemann@wsu.edu  
+
+Deven Biehler
+deven.biehler@wsu.edu 
 
 Project Description 
 This  project  develops  a  computerized  system  to  help  restaurant  personnel  coordinate 
