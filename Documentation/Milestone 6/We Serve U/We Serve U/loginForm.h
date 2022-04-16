@@ -1,4 +1,5 @@
 #pragma once
+#include "guestForm.h"
 
 namespace WeServeU {
 
@@ -83,6 +84,7 @@ namespace WeServeU {
 			this->btnContinueAsGuest->TabIndex = 1;
 			this->btnContinueAsGuest->Text = L"Continue As Guest";
 			this->btnContinueAsGuest->UseVisualStyleBackColor = true;
+			this->btnContinueAsGuest->Click += gcnew System::EventHandler(this, &loginForm::btnContinueAsGuest_Click);
 			// 
 			// label1
 			// 
@@ -137,5 +139,15 @@ namespace WeServeU {
 #pragma endregion
 	private: System::Void btnLogin_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void btnContinueAsGuest_Click(System::Object^ sender, System::EventArgs^ e) {
+		WeServeU::guestForm newForm;
+		this->Hide();
+		while (newForm.ShowDialog().ToString() != "Cancel")
+		{
+
+		}
+		//newForm.Show();
+		//Application::Run(% newForm);
+	}
+};
 }

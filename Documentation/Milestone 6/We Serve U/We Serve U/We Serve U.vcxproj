@@ -120,14 +120,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="guestForm.cpp" />
     <ClCompile Include="loginForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="guestForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="loginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="guestForm.resx">
+      <DependentUpon>guestForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.h</DependentUpon>
     </EmbeddedResource>

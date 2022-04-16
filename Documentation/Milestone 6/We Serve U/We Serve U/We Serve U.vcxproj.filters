@@ -18,9 +18,15 @@
     <ClCompile Include="loginForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="guestForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="loginForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="guestForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

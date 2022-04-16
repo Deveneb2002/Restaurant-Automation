@@ -8,5 +8,10 @@ void main(array<String^>^ args)
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 	WeServeU::loginForm newForm;
-	Application::Run(% newForm);
+	//newForm.Show();
+	while (newForm.ShowDialog() != DialogResult::Cancel)
+	{
+
+	};
+	//Application::Run(% newForm);
 }
