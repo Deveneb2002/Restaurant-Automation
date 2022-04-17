@@ -1,5 +1,6 @@
 #pragma once
 #include "guestForm.h"
+#include "isValidLogin.h"
 
 namespace WeServeU {
 
@@ -40,7 +41,8 @@ namespace WeServeU {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::TextBox^ tbxUsername;
-	private: System::Windows::Forms::TextBox^ txbPassword;
+	private: System::Windows::Forms::TextBox^ tbxPassword;
+
 	protected:
 
 	protected:
@@ -63,7 +65,7 @@ namespace WeServeU {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->tbxUsername = (gcnew System::Windows::Forms::TextBox());
-			this->txbPassword = (gcnew System::Windows::Forms::TextBox());
+			this->tbxPassword = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// btnLogin
@@ -111,20 +113,20 @@ namespace WeServeU {
 			this->tbxUsername->Size = System::Drawing::Size(217, 22);
 			this->tbxUsername->TabIndex = 4;
 			// 
-			// txbPassword
+			// tbxPassword
 			// 
-			this->txbPassword->Location = System::Drawing::Point(79, 28);
-			this->txbPassword->Name = L"txbPassword";
-			this->txbPassword->Size = System::Drawing::Size(217, 22);
-			this->txbPassword->TabIndex = 5;
-			this->txbPassword->UseSystemPasswordChar = true;
+			this->tbxPassword->Location = System::Drawing::Point(79, 28);
+			this->tbxPassword->Name = L"tbxPassword";
+			this->tbxPassword->Size = System::Drawing::Size(217, 22);
+			this->tbxPassword->TabIndex = 5;
+			this->tbxPassword->UseSystemPasswordChar = true;
 			// 
 			// loginForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(304, 117);
-			this->Controls->Add(this->txbPassword);
+			this->Controls->Add(this->tbxPassword);
 			this->Controls->Add(this->tbxUsername);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -138,6 +140,29 @@ namespace WeServeU {
 		}
 #pragma endregion
 	private: System::Void btnLogin_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (System::String::IsNullOrEmpty(tbxUsername->Text) || System::String::IsNullOrEmpty(tbxPassword->Text))
+		{
+			MessageBox::Show("Please input a username and password", "Login Error");
+		}
+		else
+		{
+			if (isValidChefLogin(tbxUsername->Text, tbxPassword->Text))
+			{
+
+			}
+			else if (isValidManagerLogin(tbxUsername->Text, tbxPassword->Text))
+			{
+
+			}
+			else if (isValidWaitstaffLogin(tbxUsername->Text, tbxPassword->Text))
+			{
+
+			}
+			else
+			{
+				MessageBox::Show("Invalid username and password", "Login Error");
+			}
+		}
 	}
 	private: System::Void btnContinueAsGuest_Click(System::Object^ sender, System::EventArgs^ e) {
 		WeServeU::guestForm newForm;

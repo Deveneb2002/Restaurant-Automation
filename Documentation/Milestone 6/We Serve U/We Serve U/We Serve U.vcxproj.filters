@@ -21,6 +21,9 @@
     <ClCompile Include="guestForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="isValidLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="loginForm.h">
@@ -29,5 +32,19 @@
     <ClInclude Include="guestForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="isValidLogin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="chefLogin.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="managerLogin.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="waitstaffLogin.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
