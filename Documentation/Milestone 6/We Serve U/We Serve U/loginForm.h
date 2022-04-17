@@ -1,5 +1,8 @@
 #pragma once
 #include "guestForm.h"
+#include "chefForm.h"
+#include "managerForm.h"
+#include "waitstaffForm.h"
 #include "isValidLogin.h"
 
 namespace WeServeU {
@@ -120,6 +123,7 @@ namespace WeServeU {
 			this->tbxPassword->Size = System::Drawing::Size(217, 22);
 			this->tbxPassword->TabIndex = 5;
 			this->tbxPassword->UseSystemPasswordChar = true;
+			this->tbxPassword->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &loginForm::Enter);
 			// 
 			// loginForm
 			// 
@@ -148,15 +152,30 @@ namespace WeServeU {
 		{
 			if (isValidChefLogin(tbxUsername->Text, tbxPassword->Text))
 			{
-
+				WeServeU::chefForm newForm;
+				this->Hide();
+				while (newForm.ShowDialog().ToString() != "Cancel")
+				{
+				}
+				this->Show();
 			}
 			else if (isValidManagerLogin(tbxUsername->Text, tbxPassword->Text))
 			{
-
+				WeServeU::managerForm newForm;
+				this->Hide();
+				while (newForm.ShowDialog().ToString() != "Cancel")
+				{
+				}
+				this->Show();
 			}
 			else if (isValidWaitstaffLogin(tbxUsername->Text, tbxPassword->Text))
 			{
-
+				WeServeU::waitstaffForm newForm;
+				this->Hide();
+				while (newForm.ShowDialog().ToString() != "Cancel")
+				{
+				}
+				this->Show();
 			}
 			else
 			{
@@ -169,10 +188,16 @@ namespace WeServeU {
 		this->Hide();
 		while (newForm.ShowDialog().ToString() != "Cancel")
 		{
-
 		}
+		this->Show();
 		//newForm.Show();
 		//Application::Run(% newForm);
+	}
+	private: System::Void Enter(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
+		if (e->KeyChar == 13)
+		{
+			btnLogin_Click(sender, e);
+		}
 	}
 };
 }

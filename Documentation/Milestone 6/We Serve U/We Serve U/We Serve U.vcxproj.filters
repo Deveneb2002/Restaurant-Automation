@@ -24,6 +24,15 @@
     <ClCompile Include="isValidLogin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="chefForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="waitstaffForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="managerForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="loginForm.h">
@@ -33,6 +42,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="isValidLogin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chefForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="waitstaffForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="managerForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

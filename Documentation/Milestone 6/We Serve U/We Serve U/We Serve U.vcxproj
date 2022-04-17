@@ -120,11 +120,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="chefForm.cpp" />
     <ClCompile Include="guestForm.cpp" />
     <ClCompile Include="isValidLogin.cpp" />
     <ClCompile Include="loginForm.cpp" />
+    <ClCompile Include="managerForm.cpp" />
+    <ClCompile Include="waitstaffForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="chefForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="guestForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -132,8 +138,17 @@
     <ClInclude Include="loginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="managerForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="waitstaffForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="chefForm.resx">
+      <DependentUpon>chefForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="guestForm.resx">
       <DependentUpon>guestForm.h</DependentUpon>
     </EmbeddedResource>
