@@ -34,6 +34,12 @@ namespace WeServeU {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::ListBox^ lbxTables;
+	protected:
+
+	protected:
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Button^ btnMarkAlertAsHandled;
 
 	private:
 		/// <summary>
@@ -48,11 +54,51 @@ namespace WeServeU {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"waitstaffForm";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->lbxTables = (gcnew System::Windows::Forms::ListBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->btnMarkAlertAsHandled = (gcnew System::Windows::Forms::Button());
+			this->SuspendLayout();
+			// 
+			// lbxTables
+			// 
+			this->lbxTables->FormattingEnabled = true;
+			this->lbxTables->ItemHeight = 16;
+			this->lbxTables->Location = System::Drawing::Point(12, 28);
+			this->lbxTables->Name = L"lbxTables";
+			this->lbxTables->Size = System::Drawing::Size(419, 356);
+			this->lbxTables->TabIndex = 0;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(12, 9);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(50, 16);
+			this->label1->TabIndex = 1;
+			this->label1->Text = L"Tables";
+			// 
+			// btnMarkAlertAsHandled
+			// 
+			this->btnMarkAlertAsHandled->Location = System::Drawing::Point(437, 348);
+			this->btnMarkAlertAsHandled->Name = L"btnMarkAlertAsHandled";
+			this->btnMarkAlertAsHandled->Size = System::Drawing::Size(267, 36);
+			this->btnMarkAlertAsHandled->TabIndex = 2;
+			this->btnMarkAlertAsHandled->Text = L"Mark Alert As Handled";
+			this->btnMarkAlertAsHandled->UseVisualStyleBackColor = true;
+			// 
+			// waitstaffForm
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(716, 391);
+			this->Controls->Add(this->btnMarkAlertAsHandled);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->lbxTables);
+			this->Name = L"waitstaffForm";
+			this->Text = L"waitstaffForm";
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
 		}
 #pragma endregion
 	};

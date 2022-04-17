@@ -34,6 +34,11 @@ namespace WeServeU {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Button^ btnRegisterEmployee;
+	protected:
+	private: System::Windows::Forms::Button^ btnDeleteEmployee;
+	private: System::Windows::Forms::Button^ btnEditMenu;
+	private: System::Windows::Forms::Button^ btnSeeAnalytics;
 
 	private:
 		/// <summary>
@@ -48,11 +53,61 @@ namespace WeServeU {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"managerForm";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->btnRegisterEmployee = (gcnew System::Windows::Forms::Button());
+			this->btnDeleteEmployee = (gcnew System::Windows::Forms::Button());
+			this->btnEditMenu = (gcnew System::Windows::Forms::Button());
+			this->btnSeeAnalytics = (gcnew System::Windows::Forms::Button());
+			this->SuspendLayout();
+			// 
+			// btnRegisterEmployee
+			// 
+			this->btnRegisterEmployee->Location = System::Drawing::Point(12, 82);
+			this->btnRegisterEmployee->Name = L"btnRegisterEmployee";
+			this->btnRegisterEmployee->Size = System::Drawing::Size(182, 29);
+			this->btnRegisterEmployee->TabIndex = 0;
+			this->btnRegisterEmployee->Text = L"Register Employee";
+			this->btnRegisterEmployee->UseVisualStyleBackColor = true;
+			// 
+			// btnDeleteEmployee
+			// 
+			this->btnDeleteEmployee->Location = System::Drawing::Point(12, 117);
+			this->btnDeleteEmployee->Name = L"btnDeleteEmployee";
+			this->btnDeleteEmployee->Size = System::Drawing::Size(182, 29);
+			this->btnDeleteEmployee->TabIndex = 1;
+			this->btnDeleteEmployee->Text = L"Delete Employee";
+			this->btnDeleteEmployee->UseVisualStyleBackColor = true;
+			// 
+			// btnEditMenu
+			// 
+			this->btnEditMenu->Location = System::Drawing::Point(12, 12);
+			this->btnEditMenu->Name = L"btnEditMenu";
+			this->btnEditMenu->Size = System::Drawing::Size(182, 29);
+			this->btnEditMenu->TabIndex = 2;
+			this->btnEditMenu->Text = L"Edit Menu";
+			this->btnEditMenu->UseVisualStyleBackColor = true;
+			// 
+			// btnSeeAnalytics
+			// 
+			this->btnSeeAnalytics->Location = System::Drawing::Point(12, 47);
+			this->btnSeeAnalytics->Name = L"btnSeeAnalytics";
+			this->btnSeeAnalytics->Size = System::Drawing::Size(182, 29);
+			this->btnSeeAnalytics->TabIndex = 3;
+			this->btnSeeAnalytics->Text = L"See Analytics";
+			this->btnSeeAnalytics->UseVisualStyleBackColor = true;
+			// 
+			// managerForm
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(209, 159);
+			this->Controls->Add(this->btnSeeAnalytics);
+			this->Controls->Add(this->btnEditMenu);
+			this->Controls->Add(this->btnDeleteEmployee);
+			this->Controls->Add(this->btnRegisterEmployee);
+			this->Name = L"managerForm";
+			this->Text = L"managerForm";
+			this->ResumeLayout(false);
+
 		}
 #pragma endregion
 	};

@@ -155,6 +155,12 @@
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="managerForm.resx">
+      <DependentUpon>managerForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="waitstaffForm.resx">
+      <DependentUpon>waitstaffForm.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Text Include="chefLogin.txt" />

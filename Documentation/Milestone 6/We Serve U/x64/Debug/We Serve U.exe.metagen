@@ -1,6 +1,8 @@
   WeServeU.chefForm.resources - Embedded, ContainedInManifestFile, 
   WeServeU.guestForm.resources - Embedded, ContainedInManifestFile, 
   WeServeU.loginForm.resources - Embedded, ContainedInManifestFile, 
+  WeServeU.managerForm.resources - Embedded, ContainedInManifestFile, 
+  WeServeU.waitstaffForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly We Serve U, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
