@@ -123,8 +123,10 @@
     <ClCompile Include="chefForm.cpp" />
     <ClCompile Include="guestForm.cpp" />
     <ClCompile Include="isValidLogin.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="loginForm.cpp" />
     <ClCompile Include="managerForm.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="waitstaffForm.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -135,12 +137,14 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="isValidLogin.h" />
+    <ClInclude Include="Item.hpp" />
     <ClInclude Include="loginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="managerForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Menu.hpp" />
     <ClInclude Include="waitstaffForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -165,6 +169,7 @@
   <ItemGroup>
     <Text Include="chefLogin.txt" />
     <Text Include="managerLogin.txt" />
+    <Text Include="menu.txt" />
     <Text Include="waitstaffLogin.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

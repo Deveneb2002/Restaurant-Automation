@@ -1,7 +1,16 @@
-﻿  loginForm.cpp
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\loginForm.cpp(8,1): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  managerForm.cpp
-  waitstaffForm.cpp
+﻿  guestForm.cpp
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(205,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(209,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(213,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  isValidLogin.cpp
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\isValidLogin.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(205,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(209,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(213,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  loginForm.cpp
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(205,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(209,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(213,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
   chefForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   We Serve U.vcxproj -> C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\x64\Debug\We Serve U.exe
