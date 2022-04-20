@@ -1,0 +1,17 @@
+C:\Users\olive\Documents\My Schoolwork\project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.AssemblyReference.cache
+C:\Users\olive\Documents\My Schoolwork\project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\olive\Documents\My Schoolwork\project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.loginForm.resources
+C:\Users\olive\Documents\My Schoolwork\project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.GenerateResource.cache
+C:\Users\olive\Documents\Project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.AssemblyReference.cache
+C:\Users\olive\Documents\Project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\olive\Documents\Project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.loginForm.resources
+C:\Users\olive\Documents\Project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.GenerateResource.cache
+C:\Users\olive\Documents\Project\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.guestForm.resources
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.AssemblyReference.cache
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.guestForm.resources
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.loginForm.resources
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.GenerateResource.cache
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.chefForm.resources
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.managerForm.resources
+C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.waitstaffForm.resources

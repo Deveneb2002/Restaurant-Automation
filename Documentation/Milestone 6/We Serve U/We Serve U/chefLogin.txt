@@ -1,0 +1,2 @@
+ExampleChefUsername ExampleChefPassword
+ExampleSecondChefUsername ExampleSecondChefPassword
