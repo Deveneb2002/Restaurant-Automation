@@ -33,7 +33,7 @@
     <ClCompile Include="managerForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="managerEngine.cpp">
+    <ClCompile Include="manageEmployeeEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="manageEmployeeForm.cpp">
@@ -43,6 +43,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editMenuForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editMenuEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,7 +71,7 @@
     <ClInclude Include="managerForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="managerEngine.h">
+    <ClInclude Include="manageEmployeeEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="manageEmployeeForm.h">
@@ -75,6 +81,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Item.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="editMenuForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="editMenuEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

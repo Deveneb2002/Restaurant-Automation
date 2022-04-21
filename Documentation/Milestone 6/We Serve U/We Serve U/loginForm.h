@@ -160,6 +160,8 @@ namespace WeServeU {
 			// 
 			// label3
 			// 
+			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 13.875F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));

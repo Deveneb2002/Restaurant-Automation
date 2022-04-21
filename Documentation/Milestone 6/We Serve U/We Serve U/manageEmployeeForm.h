@@ -1,6 +1,6 @@
 #pragma once
 #include "isValidLogin.h"
-#include "managerEngine.h"
+#include "manageEmployeeEngine.h"
 
 namespace WeServeU {
 
@@ -96,9 +96,9 @@ namespace WeServeU {
 				static_cast<System::Byte>(0)));
 			this->lbManageEmployees->Location = System::Drawing::Point(21, 25);
 			this->lbManageEmployees->Name = L"lbManageEmployees";
-			this->lbManageEmployees->Size = System::Drawing::Size(431, 50);
+			this->lbManageEmployees->Size = System::Drawing::Size(385, 50);
 			this->lbManageEmployees->TabIndex = 0;
-			this->lbManageEmployees->Text = L"Managage employees";
+			this->lbManageEmployees->Text = L"Manage employees";
 			// 
 			// tableLayoutPanel1
 			// 
@@ -219,9 +219,9 @@ namespace WeServeU {
 			this->lbEmployeeName->ForeColor = System::Drawing::SystemColors::HotTrack;
 			this->lbEmployeeName->Location = System::Drawing::Point(28, 352);
 			this->lbEmployeeName->Name = L"lbEmployeeName";
-			this->lbEmployeeName->Size = System::Drawing::Size(250, 39);
+			this->lbEmployeeName->Size = System::Drawing::Size(312, 39);
 			this->lbEmployeeName->TabIndex = 5;
-			this->lbEmployeeName->Text = L"employee name";
+			this->lbEmployeeName->Text = L"employee username";
 			// 
 			// tbEmployeeName
 			// 

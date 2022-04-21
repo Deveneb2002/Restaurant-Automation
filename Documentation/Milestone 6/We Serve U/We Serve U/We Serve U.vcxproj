@@ -121,18 +121,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chefForm.cpp" />
+    <ClCompile Include="editMenuEngine.cpp" />
+    <ClCompile Include="editMenuForm.cpp" />
     <ClCompile Include="guestForm.cpp" />
     <ClCompile Include="isValidLogin.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="loginForm.cpp" />
     <ClCompile Include="manageEmployeeForm.cpp" />
-    <ClCompile Include="managerEngine.cpp" />
+    <ClCompile Include="manageEmployeeEngine.cpp" />
     <ClCompile Include="managerForm.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="waitstaffForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chefForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="editMenuEngine.h" />
+    <ClInclude Include="editMenuForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="guestForm.h">
@@ -146,7 +152,7 @@
     <ClInclude Include="manageEmployeeForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="managerEngine.h" />
+    <ClInclude Include="manageEmployeeEngine.h" />
     <ClInclude Include="managerForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -158,6 +164,9 @@
   <ItemGroup>
     <EmbeddedResource Include="chefForm.resx">
       <DependentUpon>chefForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editMenuForm.resx">
+      <DependentUpon>editMenuForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="guestForm.resx">
       <DependentUpon>guestForm.h</DependentUpon>

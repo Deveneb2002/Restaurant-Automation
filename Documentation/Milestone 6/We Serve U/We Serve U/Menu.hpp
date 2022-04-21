@@ -6,8 +6,9 @@ public:
 	LinkedList();
 	~LinkedList();
 	Node* getHead() const;
-	void insertFront(string n, string d, double p, bool a);
-	void deleteItem(const string n);
+	bool insertFront(string n, string d, double p, bool a);
+	bool deleteItem(const string n);
+	bool isPresentOnMenu(const string n);
 	void deleteList(Node* pCur);
 private:
 	Node* pHead;
