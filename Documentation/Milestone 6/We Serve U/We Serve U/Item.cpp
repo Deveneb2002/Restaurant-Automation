@@ -1,6 +1,6 @@
 #include "Item.hpp"
 
-Node::Node(string n, string d, double p, bool a) {
+Node::Node(System::String^ n, System::String^ d, double p, bool a) {
 	name = n;
 	description = d;
 	price = p;
@@ -12,31 +12,31 @@ Node::~Node() {
 
 }
 
-string Node::getName() const {
+System::String^ Node::getName(){
 	return name;
 }
 
-string Node::getDescription() const {
+System::String^ Node::getDescription(){
 	return description;
 }
 
-double Node::getPrice() const {
+double Node::getPrice(){
 	return price;
 }
 
-bool Node::getAvailability() const {
+bool Node::getAvailability(){
 	return availability;
 }
 
-Node* Node::getNext() const {
+Node^ Node::getNext(){
 	return pNext;
 }
 
-void Node::setName(string n) {
+void Node::setName(System::String^ n) {
 	name = n;
 }
 
-void Node::setDescription(string d) {
+void Node::setDescription(System::String^ d) {
 	description = d;
 }
 
@@ -48,6 +48,6 @@ void Node::setAvailability(bool a) {
 	availability = a;
 }
 
-void Node::setNext(Node* ptr) {
+void Node::setNext(Node^ ptr) {
 	pNext = ptr;
 }

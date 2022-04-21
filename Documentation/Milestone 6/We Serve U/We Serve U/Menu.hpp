@@ -1,14 +1,14 @@
 #pragma once
 #include "Item.hpp"
 
-class LinkedList {
+ref class LinkedList {
 public:
 	LinkedList();
 	~LinkedList();
-	Node* getHead() const;
-	void insertFront(string n, string d, double p, bool a);
-	void deleteItem(const string n);
-	void deleteList(Node* pCur);
+	Node^ getHead();
+	void insertFront(System::String^ n, System::String^ d, double p, bool a);
+	void deleteItem(const System::String^ n);
+	void deleteList(Node^ pCur);
 private:
-	Node* pHead;
+	Node^ pHead;
 };

@@ -23,7 +23,7 @@ namespace WeServeU {
 		loginForm(void)
 		{
 			InitializeComponent();
-			FileSystemWatcher^ watcher = gcnew FileSystemWatcher("menu.txt");
+			//FileSystemWatcher^ watcher = gcnew FileSystemWatcher("\\menu.txt");
 		}
 
 	protected:

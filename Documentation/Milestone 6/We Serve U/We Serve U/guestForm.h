@@ -1,6 +1,5 @@
 #pragma once
 #include "Menu.hpp"
-#include <msclr\marshal_cppstd.h>
 
 namespace WeServeU {
 
@@ -193,26 +192,26 @@ namespace WeServeU {
 		}
 #pragma endregion
 	private: System::Void guestForm_Load(System::Object^ sender, System::EventArgs^ e) {
-		LinkedList* pOurMenu = new LinkedList;
+		LinkedList^ pOurMenu = gcnew LinkedList;
 		//Read menu from file
 		StreamReader^ reader = gcnew StreamReader("menu.txt");
 		while (!reader->EndOfStream)
 		{
 			//Strings in std
-			std::string ourLine = msclr::interop::marshal_as<std::string>(reader->ReadLine());
+			System::String^ ourLine = reader->ReadLine();
 			//name
-			int end = ourLine.find("\"");
-			string ourName = ourLine.substr(0, end);
-			ourLine.erase(0, end + 1);
+			int end = ourLine->IndexOf("\"");
+			System::String^ ourName = ourLine->Substring(0,end);
+			ourLine = ourLine->Remove(0, end + 1);
 			//Description
-			end = ourLine.find("\"");
-			string ourDescription = ourLine.substr(0, end);
-			ourLine.erase(0, end + 2);
+			end = ourLine->IndexOf("\"");
+			System::String^ ourDescription = ourLine->Substring(0, end);
+			ourLine = ourLine->Remove(0, end + 2);
 			//Price
-			end = ourLine.find(" ");
-			string tempString = ourLine.substr(0, end);
-			double ourPrice = std::stod(tempString);
-			ourLine.erase(0, end + 1);
+			end = ourLine->IndexOf(" ");
+			System::String^ tempString = ourLine->Substring(0, end);
+			double ourPrice = System::Convert::ToDouble(tempString);
+			ourLine = ourLine->Remove(0, end + 1);
 			//Availibility
 			if (ourLine == "Available")
 			{
@@ -230,7 +229,7 @@ namespace WeServeU {
 		lvwMenu->Columns->Add("Description");
 		lvwMenu->Columns->Add("Price", -2);
 
-		Node* pOurCurrentItem = pOurMenu->getHead();
+		Node^ pOurCurrentItem = pOurMenu->getHead();
 		while (true)
 		{
 			if (pOurCurrentItem != nullptr)
@@ -239,11 +238,9 @@ namespace WeServeU {
 				{
 					ListViewItem^ newItem = gcnew ListViewItem();
 
-					System::String^ ourName = gcnew System::String(pOurCurrentItem->getName().c_str());
-					newItem->Text = ourName;
+					newItem->Text = pOurCurrentItem->getName();
 
-					System::String^ ourDescription = gcnew System::String(pOurCurrentItem->getDescription().c_str());
-					newItem->SubItems->Add(ourDescription);
+					newItem->SubItems->Add(pOurCurrentItem->getDescription());
 
 					newItem->SubItems->Add(pOurCurrentItem->getPrice().ToString());
 
