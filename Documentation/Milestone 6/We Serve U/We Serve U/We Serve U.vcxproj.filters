@@ -91,5 +91,11 @@
     <Text Include="menu.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="table1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="exampleTable.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

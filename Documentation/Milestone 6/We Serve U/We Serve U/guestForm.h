@@ -224,6 +224,7 @@ namespace WeServeU {
 			}
 
 		}
+		reader->Close();
 		//Insert menu into listview
 		lvwMenu->Columns->Add("Name");
 		lvwMenu->Columns->Add("Description");
