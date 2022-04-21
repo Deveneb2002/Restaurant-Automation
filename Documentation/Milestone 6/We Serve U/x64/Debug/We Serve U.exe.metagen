@@ -1,6 +1,7 @@
   WeServeU.chefForm.resources - Embedded, ContainedInManifestFile, 
   WeServeU.guestForm.resources - Embedded, ContainedInManifestFile, 
   WeServeU.loginForm.resources - Embedded, ContainedInManifestFile, 
+  WeServeU.manageEmployeeForm.resources - Embedded, ContainedInManifestFile, 
   WeServeU.managerForm.resources - Embedded, ContainedInManifestFile, 
   WeServeU.waitstaffForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
@@ -22,6 +23,9 @@ Class WeServeU.chefForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class WeServeU.guestForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class WeServeU.manageEmployeeForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class WeServeU.managerForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
