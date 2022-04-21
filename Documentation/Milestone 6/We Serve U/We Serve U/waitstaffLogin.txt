@@ -1,1 +1,1 @@
-ExampleWaitstaffUsername ExampleWaitstaffPassword
+ExampleWaiterUsername ExampleWaiterPassword

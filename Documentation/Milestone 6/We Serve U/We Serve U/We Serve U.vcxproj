@@ -44,7 +44,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -124,6 +124,8 @@
     <ClCompile Include="guestForm.cpp" />
     <ClCompile Include="isValidLogin.cpp" />
     <ClCompile Include="loginForm.cpp" />
+    <ClCompile Include="manageEmployeeForm.cpp" />
+    <ClCompile Include="managerEngine.cpp" />
     <ClCompile Include="managerForm.cpp" />
     <ClCompile Include="waitstaffForm.cpp" />
   </ItemGroup>
@@ -138,6 +140,10 @@
     <ClInclude Include="loginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="manageEmployeeForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="managerEngine.h" />
     <ClInclude Include="managerForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageEmployeeForm.resx">
+      <DependentUpon>manageEmployeeForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="managerForm.resx">
       <DependentUpon>managerForm.h</DependentUpon>
