@@ -1,6 +1,6 @@
 #pragma once
-using namespace System;
+//using namespace System;
 using namespace System::IO;
 
-void RegisterEmployee(String^ employee, String^ username, String^ password); // "waiter" OR "chef"
-bool RemoveEmployee(String^ employee, String^ username);
+void RegisterEmployee(System::String^ employee, System::String^ username, System::String^ password); // "waiter" OR "chef"
+bool RemoveEmployee(System::String^ employee, System::String^ username);

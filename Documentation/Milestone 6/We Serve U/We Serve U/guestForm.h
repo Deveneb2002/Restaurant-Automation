@@ -1,8 +1,11 @@
 #pragma once
+#include "Menu.hpp"
+#include <msclr\marshal_cppstd.h>
 
 namespace WeServeU {
 
-	using namespace System;
+	//using namespace System;
+	using namespace System::IO;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
@@ -34,7 +37,7 @@ namespace WeServeU {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::ListBox^ lbxMenu;
+
 	protected:
 
 	private: System::Windows::Forms::Label^ label1;
@@ -46,6 +49,7 @@ namespace WeServeU {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Button^ btnPingWaitstaff;
 	private: System::Windows::Forms::Button^ btnPrintReciept;
+	private: System::Windows::Forms::ListView^ lvwMenu;
 
 	protected:
 
@@ -53,7 +57,7 @@ namespace WeServeU {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -62,7 +66,6 @@ namespace WeServeU {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->lbxMenu = (gcnew System::Windows::Forms::ListBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->lbxOrder = (gcnew System::Windows::Forms::ListBox());
@@ -72,16 +75,8 @@ namespace WeServeU {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->btnPingWaitstaff = (gcnew System::Windows::Forms::Button());
 			this->btnPrintReciept = (gcnew System::Windows::Forms::Button());
+			this->lvwMenu = (gcnew System::Windows::Forms::ListView());
 			this->SuspendLayout();
-			// 
-			// lbxMenu
-			// 
-			this->lbxMenu->FormattingEnabled = true;
-			this->lbxMenu->ItemHeight = 16;
-			this->lbxMenu->Location = System::Drawing::Point(12, 30);
-			this->lbxMenu->Name = L"lbxMenu";
-			this->lbxMenu->Size = System::Drawing::Size(342, 148);
-			this->lbxMenu->TabIndex = 0;
 			// 
 			// label1
 			// 
@@ -95,7 +90,7 @@ namespace WeServeU {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(360, 9);
+			this->label2->Location = System::Drawing::Point(678, 7);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(41, 16);
 			this->label2->TabIndex = 3;
@@ -105,15 +100,15 @@ namespace WeServeU {
 			// 
 			this->lbxOrder->FormattingEnabled = true;
 			this->lbxOrder->ItemHeight = 16;
-			this->lbxOrder->Location = System::Drawing::Point(360, 30);
+			this->lbxOrder->Location = System::Drawing::Point(678, 28);
 			this->lbxOrder->Name = L"lbxOrder";
-			this->lbxOrder->Size = System::Drawing::Size(196, 116);
+			this->lbxOrder->Size = System::Drawing::Size(359, 116);
 			this->lbxOrder->TabIndex = 2;
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(360, 159);
+			this->label3->Location = System::Drawing::Point(678, 157);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(41, 16);
 			this->label3->TabIndex = 4;
@@ -121,24 +116,24 @@ namespace WeServeU {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(407, 156);
+			this->textBox1->Location = System::Drawing::Point(725, 154);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->ReadOnly = true;
-			this->textBox1->Size = System::Drawing::Size(149, 22);
+			this->textBox1->Size = System::Drawing::Size(312, 22);
 			this->textBox1->TabIndex = 5;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(450, 184);
+			this->textBox2->Location = System::Drawing::Point(768, 182);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->ReadOnly = true;
-			this->textBox2->Size = System::Drawing::Size(106, 22);
+			this->textBox2->Size = System::Drawing::Size(269, 22);
 			this->textBox2->TabIndex = 7;
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(360, 187);
+			this->label4->Location = System::Drawing::Point(678, 185);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(84, 16);
 			this->label4->TabIndex = 6;
@@ -148,25 +143,38 @@ namespace WeServeU {
 			// 
 			this->btnPingWaitstaff->Location = System::Drawing::Point(12, 187);
 			this->btnPingWaitstaff->Name = L"btnPingWaitstaff";
-			this->btnPingWaitstaff->Size = System::Drawing::Size(342, 56);
+			this->btnPingWaitstaff->Size = System::Drawing::Size(660, 56);
 			this->btnPingWaitstaff->TabIndex = 8;
 			this->btnPingWaitstaff->Text = L"Ping Waitstaff";
 			this->btnPingWaitstaff->UseVisualStyleBackColor = true;
 			// 
 			// btnPrintReciept
 			// 
-			this->btnPrintReciept->Location = System::Drawing::Point(363, 212);
+			this->btnPrintReciept->Location = System::Drawing::Point(681, 210);
 			this->btnPrintReciept->Name = L"btnPrintReciept";
-			this->btnPrintReciept->Size = System::Drawing::Size(193, 31);
+			this->btnPrintReciept->Size = System::Drawing::Size(356, 31);
 			this->btnPrintReciept->TabIndex = 9;
 			this->btnPrintReciept->Text = L"Print Reciept";
 			this->btnPrintReciept->UseVisualStyleBackColor = true;
+			// 
+			// lvwMenu
+			// 
+			this->lvwMenu->FullRowSelect = true;
+			this->lvwMenu->HideSelection = false;
+			this->lvwMenu->Location = System::Drawing::Point(12, 28);
+			this->lvwMenu->MultiSelect = false;
+			this->lvwMenu->Name = L"lvwMenu";
+			this->lvwMenu->Size = System::Drawing::Size(660, 153);
+			this->lvwMenu->TabIndex = 10;
+			this->lvwMenu->UseCompatibleStateImageBehavior = false;
+			this->lvwMenu->View = System::Windows::Forms::View::Details;
 			// 
 			// guestForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(577, 255);
+			this->ClientSize = System::Drawing::Size(1049, 255);
+			this->Controls->Add(this->lvwMenu);
 			this->Controls->Add(this->btnPrintReciept);
 			this->Controls->Add(this->btnPingWaitstaff);
 			this->Controls->Add(this->textBox2);
@@ -176,13 +184,79 @@ namespace WeServeU {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->lbxOrder);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->lbxMenu);
 			this->Name = L"guestForm";
 			this->Text = L"guestForm";
+			this->Load += gcnew System::EventHandler(this, &guestForm::guestForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
+	private: System::Void guestForm_Load(System::Object^ sender, System::EventArgs^ e) {
+		LinkedList* pOurMenu = new LinkedList;
+		//Read menu from file
+		StreamReader^ reader = gcnew StreamReader("menu.txt");
+		while (!reader->EndOfStream)
+		{
+			//Strings in std
+			std::string ourLine = msclr::interop::marshal_as<std::string>(reader->ReadLine());
+			//name
+			int end = ourLine.find("\"");
+			string ourName = ourLine.substr(0, end);
+			ourLine.erase(0, end + 1);
+			//Description
+			end = ourLine.find("\"");
+			string ourDescription = ourLine.substr(0, end);
+			ourLine.erase(0, end + 2);
+			//Price
+			end = ourLine.find(" ");
+			string tempString = ourLine.substr(0, end);
+			double ourPrice = std::stod(tempString);
+			ourLine.erase(0, end + 1);
+			//Availibility
+			if (ourLine == "Available")
+			{
+				pOurMenu->insertFront(ourName, ourDescription, ourPrice, true);
+			}
+			else
+			{
+				pOurMenu->insertFront(ourName, ourDescription, ourPrice, false);
+			}
+
+		}
+		//Insert menu into listview
+		lvwMenu->Columns->Add("Name");
+		lvwMenu->Columns->Add("Description");
+		lvwMenu->Columns->Add("Price", -2);
+
+		Node* pOurCurrentItem = pOurMenu->getHead();
+		while (true)
+		{
+			if (pOurCurrentItem != nullptr)
+			{
+				if (pOurCurrentItem->getAvailability())
+				{
+					ListViewItem^ newItem = gcnew ListViewItem();
+
+					System::String^ ourName = gcnew System::String(pOurCurrentItem->getName().c_str());
+					newItem->Text = ourName;
+
+					System::String^ ourDescription = gcnew System::String(pOurCurrentItem->getDescription().c_str());
+					newItem->SubItems->Add(ourDescription);
+
+					newItem->SubItems->Add(pOurCurrentItem->getPrice().ToString());
+
+					lvwMenu->Items->Add(newItem);
+				}
+				pOurCurrentItem = pOurCurrentItem->getNext();
+			}
+			else
+			{
+				break;
+			}
+		}
+		lvwMenu->Columns[0]->Width = -1;
+		lvwMenu->Columns[1]->Width = -1;
+	}
 	};
 }

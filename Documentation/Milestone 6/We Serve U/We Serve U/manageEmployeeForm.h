@@ -4,7 +4,7 @@
 
 namespace WeServeU {
 
-	using namespace System;
+	//using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
@@ -407,7 +407,7 @@ private: System::Void btnDone_Click(System::Object^ sender, System::EventArgs^ e
 			}
 			else // remove employess
 			{
-				throw gcnew Exception("User not found!");
+				throw gcnew System::Exception("User not found!");
 			}
 		}
 	}
