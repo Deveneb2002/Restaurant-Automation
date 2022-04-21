@@ -2,11 +2,11 @@
 #include <fstream>
 #include <iostream>
 
-using namespace System;
+//using namespace System;
 using namespace System::IO;
 using namespace std;
 
-void RegisterEmployee(String^ employee, String^ username, String^ password) // "waiter" OR "chef"
+void RegisterEmployee(System::String^ employee, System::String^ username, System::String^ password) // "waiter" OR "chef"
 {
 	StreamWriter^ writer;
 	if (employee == "waiter")
@@ -18,16 +18,16 @@ void RegisterEmployee(String^ employee, String^ username, String^ password) // "
 		writer = gcnew StreamWriter("chefLogin.txt", true);
 	}
 
-	String^ newData = username + " " + password;
+	System::String^ newData = username + " " + password;
 	writer->WriteLine(newData);
 	writer->Close();
 }
 
-bool RemoveEmployee(String^ employee, String^ username)
+bool RemoveEmployee(System::String^ employee, System::String^ username)
 {
 	bool userFound = false;
-	String^ builder = "";
-	String^ currentLine;
+	System::String^ builder = "";
+	System::String^ currentLine;
 	StreamReader^ reader;
 
 	if (employee == "waiter")

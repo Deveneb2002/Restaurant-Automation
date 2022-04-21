@@ -1,15 +1,15 @@
 #pragma once
 #include "isValidLogin.h";
 
-using namespace System;
+//using namespace System;
 using namespace System::IO;
 
-bool isValidChefLogin(String^ username, String^ password)
+bool isValidChefLogin(System::String^ username, System::String^ password)
 {
 	StreamReader^ reader = gcnew StreamReader("chefLogin.txt");
 	while (!reader->EndOfStream)
 	{
-		String^ ourLine = reader->ReadLine();
+	System::String^ ourLine = reader->ReadLine();
 		if (ourLine->StartsWith(username))
 		{
 			if (ourLine->EndsWith(password))
@@ -23,12 +23,12 @@ bool isValidChefLogin(String^ username, String^ password)
 	return false;
 }
 
-bool isValidManagerLogin(String^ username, String^ password)
+bool isValidManagerLogin(System::String^ username, System ::String^ password)
 {
 	StreamReader^ reader = gcnew StreamReader("managerLogin.txt");
 	while (!reader->EndOfStream)
 	{
-		String^ ourLine = reader->ReadLine();
+		System::String^ ourLine = reader->ReadLine();
 		if (ourLine->StartsWith(username))
 		{
 			if (ourLine->EndsWith(password))
@@ -42,12 +42,12 @@ bool isValidManagerLogin(String^ username, String^ password)
 	return false;
 }
 
-bool isValidWaitstaffLogin(String^ username, String^ password)
+bool isValidWaitstaffLogin(System::String^ username, System::String^ password)
 {
 	StreamReader^ reader = gcnew StreamReader("waitstaffLogin.txt");
 	while (!reader->EndOfStream)
 	{
-		String^ ourLine = reader->ReadLine();
+		System::String^ ourLine = reader->ReadLine();
 		if (ourLine->StartsWith(username))
 		{
 			if (ourLine->EndsWith(password))
@@ -61,10 +61,10 @@ bool isValidWaitstaffLogin(String^ username, String^ password)
 	return false;
 }
 
-bool isValidChef(String^ username)
+bool isValidChef(System::String^ username)
 {
 	StreamReader^ reader = gcnew StreamReader("chefLogin.txt");
-	String^ ourLine;
+	System::String^ ourLine;
 
 	while (!reader->EndOfStream)
 	{
@@ -79,10 +79,10 @@ bool isValidChef(String^ username)
 	return false;
 }
 
-bool isValidManager(String^ username)
+bool isValidManager(System::String^ username)
 {
 	StreamReader^ reader = gcnew StreamReader("managerLogin.txt");
-	String^ ourLine;
+	System::String^ ourLine;
 
 	while (!reader->EndOfStream)
 	{
@@ -98,10 +98,10 @@ bool isValidManager(String^ username)
 	return false;
 }
 
-bool isValidWaitStaff(String^ username)
+bool isValidWaitStaff(System::String^ username)
 {
 	StreamReader^ reader = gcnew StreamReader("waitstaffLogin.txt");
-	String^ ourLine;
+	System::String^ ourLine;
 
 	while (!reader->EndOfStream)
 	{
