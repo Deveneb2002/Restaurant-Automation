@@ -36,6 +36,7 @@ namespace WeServeU {
 				delete components;
 			}
 		}
+		bool isReadOnly;
 
 	protected:
 
@@ -49,7 +50,8 @@ namespace WeServeU {
 	private: System::Windows::Forms::Button^ btnPingWaitstaff;
 	private: System::Windows::Forms::Button^ btnPrintReciept;
 	private: System::Windows::Forms::ListView^ lvwMenu;
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ btnSubmitOrder;
+
 	private: System::Windows::Forms::ListView^ lvwOrder;
 
 
@@ -77,14 +79,14 @@ namespace WeServeU {
 			this->btnPingWaitstaff = (gcnew System::Windows::Forms::Button());
 			this->btnPrintReciept = (gcnew System::Windows::Forms::Button());
 			this->lvwMenu = (gcnew System::Windows::Forms::ListView());
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->btnSubmitOrder = (gcnew System::Windows::Forms::Button());
 			this->lvwOrder = (gcnew System::Windows::Forms::ListView());
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(12, 9);
+			this->label1->Location = System::Drawing::Point(9, 9);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(40, 16);
 			this->label1->TabIndex = 1;
@@ -93,7 +95,7 @@ namespace WeServeU {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(677, 7);
+			this->label2->Location = System::Drawing::Point(676, 9);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(41, 16);
 			this->label2->TabIndex = 3;
@@ -102,7 +104,7 @@ namespace WeServeU {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(677, 158);
+			this->label3->Location = System::Drawing::Point(676, 157);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(41, 16);
 			this->label3->TabIndex = 4;
@@ -110,26 +112,26 @@ namespace WeServeU {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(725, 154);
+			this->textBox1->Location = System::Drawing::Point(723, 154);
 			this->textBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->ReadOnly = true;
-			this->textBox1->Size = System::Drawing::Size(312, 22);
+			this->textBox1->Size = System::Drawing::Size(314, 22);
 			this->textBox1->TabIndex = 5;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(768, 182);
+			this->textBox2->Location = System::Drawing::Point(766, 182);
 			this->textBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->ReadOnly = true;
-			this->textBox2->Size = System::Drawing::Size(269, 22);
+			this->textBox2->Size = System::Drawing::Size(271, 22);
 			this->textBox2->TabIndex = 7;
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(677, 185);
+			this->label4->Location = System::Drawing::Point(676, 185);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(84, 16);
 			this->label4->TabIndex = 6;
@@ -137,10 +139,10 @@ namespace WeServeU {
 			// 
 			// btnPingWaitstaff
 			// 
-			this->btnPingWaitstaff->Location = System::Drawing::Point(12, 187);
+			this->btnPingWaitstaff->Location = System::Drawing::Point(346, 191);
 			this->btnPingWaitstaff->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->btnPingWaitstaff->Name = L"btnPingWaitstaff";
-			this->btnPingWaitstaff->Size = System::Drawing::Size(313, 57);
+			this->btnPingWaitstaff->Size = System::Drawing::Size(326, 52);
 			this->btnPingWaitstaff->TabIndex = 8;
 			this->btnPingWaitstaff->Text = L"Ping Waitstaff";
 			this->btnPingWaitstaff->UseVisualStyleBackColor = true;
@@ -148,10 +150,10 @@ namespace WeServeU {
 			// 
 			// btnPrintReciept
 			// 
-			this->btnPrintReciept->Location = System::Drawing::Point(681, 210);
+			this->btnPrintReciept->Location = System::Drawing::Point(12, 191);
 			this->btnPrintReciept->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->btnPrintReciept->Name = L"btnPrintReciept";
-			this->btnPrintReciept->Size = System::Drawing::Size(356, 31);
+			this->btnPrintReciept->Size = System::Drawing::Size(325, 52);
 			this->btnPrintReciept->TabIndex = 9;
 			this->btnPrintReciept->Text = L"Print Reciept";
 			this->btnPrintReciept->UseVisualStyleBackColor = true;
@@ -171,16 +173,16 @@ namespace WeServeU {
 			this->lvwMenu->View = System::Windows::Forms::View::Details;
 			this->lvwMenu->SelectedIndexChanged += gcnew System::EventHandler(this, &guestForm::lvwMenu_SelectedIndexChanged);
 			// 
-			// button1
+			// btnSubmitOrder
 			// 
-			this->button1->Location = System::Drawing::Point(331, 191);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(341, 49);
-			this->button1->TabIndex = 11;
-			this->button1->Text = L"Submit Order";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &guestForm::button1_Click);
+			this->btnSubmitOrder->Location = System::Drawing::Point(679, 210);
+			this->btnSubmitOrder->Margin = System::Windows::Forms::Padding(4);
+			this->btnSubmitOrder->Name = L"btnSubmitOrder";
+			this->btnSubmitOrder->Size = System::Drawing::Size(358, 33);
+			this->btnSubmitOrder->TabIndex = 11;
+			this->btnSubmitOrder->Text = L"Submit Order";
+			this->btnSubmitOrder->UseVisualStyleBackColor = true;
+			this->btnSubmitOrder->Click += gcnew System::EventHandler(this, &guestForm::button1_Click);
 			// 
 			// lvwOrder
 			// 
@@ -190,7 +192,7 @@ namespace WeServeU {
 			this->lvwOrder->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->lvwOrder->MultiSelect = false;
 			this->lvwOrder->Name = L"lvwOrder";
-			this->lvwOrder->Size = System::Drawing::Size(355, 120);
+			this->lvwOrder->Size = System::Drawing::Size(358, 120);
 			this->lvwOrder->TabIndex = 12;
 			this->lvwOrder->UseCompatibleStateImageBehavior = false;
 			this->lvwOrder->View = System::Windows::Forms::View::Details;
@@ -200,9 +202,9 @@ namespace WeServeU {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1049, 255);
+			this->ClientSize = System::Drawing::Size(1049, 250);
 			this->Controls->Add(this->lvwOrder);
-			this->Controls->Add(this->button1);
+			this->Controls->Add(this->btnSubmitOrder);
 			this->Controls->Add(this->lvwMenu);
 			this->Controls->Add(this->btnPrintReciept);
 			this->Controls->Add(this->btnPingWaitstaff);
@@ -222,6 +224,7 @@ namespace WeServeU {
 		}
 #pragma endregion
 	private: System::Void guestForm_Load(System::Object^ sender, System::EventArgs^ e) {
+		this->isReadOnly = false;
 		LinkedList^ pOurMenu = gcnew LinkedList;
 		//Read menu from file
 		StreamReader^ reader = gcnew StreamReader("menu.txt");
@@ -301,10 +304,17 @@ namespace WeServeU {
 	}
 
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-
+		this->isReadOnly = true;
 	}
 
 	private: System::Void lvwOrder_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (this->isReadOnly)
+		{
+			lvwOrder->SelectedItems->Clear();
+			lvwMenu->SelectedItems->Clear();
+		}
+		else
+		{
 		ListView::SelectedIndexCollection^ ourIndices = lvwOrder->SelectedIndices;
 		for each (int var in ourIndices)
 		{
@@ -313,10 +323,18 @@ namespace WeServeU {
 		lvwOrder->Columns[0]->Width = -1;
 		lvwOrder->Columns[1]->Width = -1;
 		lvwMenu->SelectedItems->Clear();
+		}
 	}
 	private: System::Void lvwMenu_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (this->isReadOnly)
+		{
+			lvwOrder->SelectedItems->Clear();
+			lvwMenu->SelectedItems->Clear();
+		}
+		else
+		{
 		ListView::SelectedListViewItemCollection^ ourIndices = lvwMenu->SelectedItems;
-		for each (ListViewItem^ var in ourIndices)
+		for each (ListViewItem ^ var in ourIndices)
 		{
 			ListViewItem^ newItem = ((ListViewItem^)(var->Clone()));
 			lvwOrder->Items->Add(newItem);
@@ -324,6 +342,7 @@ namespace WeServeU {
 		lvwOrder->Columns[0]->Width = -1;
 		lvwOrder->Columns[1]->Width = -1;
 		lvwMenu->SelectedItems->Clear();
+		}
 	}
 };
 }
