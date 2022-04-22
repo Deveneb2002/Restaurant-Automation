@@ -47,12 +47,17 @@ namespace WeServeU {
 	private: System::Windows::Forms::Button^ btnAddItem;
 	private: System::Windows::Forms::Button^ btnDone;
 	private: System::Windows::Forms::Label^ lbEditMenu;
-	private: System::Windows::Forms::Button^ btnSetItemName;
+	private: System::Windows::Forms::Button^ btnUpdateItem;
 
-	private: System::Windows::Forms::Button^ btnSetItemPrice;
 
-	private: System::Windows::Forms::Button^ btnSetItemDescription;
-	private: System::Windows::Forms::Button^ btnSetItemAvailability;
+
+
+
+
+
+
+
+
 
 
 
@@ -85,10 +90,7 @@ namespace WeServeU {
 			this->tbItemName = (gcnew System::Windows::Forms::TextBox());
 			this->lbItemName = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->btnSetItemName = (gcnew System::Windows::Forms::Button());
-			this->btnSetItemPrice = (gcnew System::Windows::Forms::Button());
-			this->btnSetItemDescription = (gcnew System::Windows::Forms::Button());
-			this->btnSetItemAvailability = (gcnew System::Windows::Forms::Button());
+			this->btnUpdateItem = (gcnew System::Windows::Forms::Button());
 			this->btnRemoveItem = (gcnew System::Windows::Forms::Button());
 			this->btnAddItem = (gcnew System::Windows::Forms::Button());
 			this->btnDone = (gcnew System::Windows::Forms::Button());
@@ -162,85 +164,35 @@ namespace WeServeU {
 			this->tableLayoutPanel1->ColumnCount = 1;
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
-			this->tableLayoutPanel1->Controls->Add(this->btnSetItemName, 0, 5);
-			this->tableLayoutPanel1->Controls->Add(this->btnSetItemPrice, 0, 4);
-			this->tableLayoutPanel1->Controls->Add(this->btnSetItemDescription, 0, 3);
-			this->tableLayoutPanel1->Controls->Add(this->btnSetItemAvailability, 0, 2);
+			this->tableLayoutPanel1->Controls->Add(this->btnUpdateItem, 0, 2);
 			this->tableLayoutPanel1->Controls->Add(this->btnRemoveItem, 0, 1);
 			this->tableLayoutPanel1->Controls->Add(this->btnAddItem, 0, 0);
 			this->tableLayoutPanel1->Font = (gcnew System::Drawing::Font(L"Trebuchet MS", 7.875F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->tableLayoutPanel1->Location = System::Drawing::Point(124, 202);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
-			this->tableLayoutPanel1->RowCount = 6;
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
+			this->tableLayoutPanel1->RowCount = 3;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
 			this->tableLayoutPanel1->Size = System::Drawing::Size(465, 402);
 			this->tableLayoutPanel1->TabIndex = 10;
 			// 
-			// btnSetItemName
+			// btnUpdateItem
 			// 
-			this->btnSetItemName->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+			this->btnUpdateItem->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->btnSetItemName->BackColor = System::Drawing::Color::Yellow;
-			this->btnSetItemName->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->btnUpdateItem->BackColor = System::Drawing::Color::Yellow;
+			this->btnUpdateItem->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnSetItemName->Location = System::Drawing::Point(3, 333);
-			this->btnSetItemName->Name = L"btnSetItemName";
-			this->btnSetItemName->Size = System::Drawing::Size(459, 66);
-			this->btnSetItemName->TabIndex = 5;
-			this->btnSetItemName->Text = L"Set item name";
-			this->btnSetItemName->UseVisualStyleBackColor = false;
-			// 
-			// btnSetItemPrice
-			// 
-			this->btnSetItemPrice->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->btnSetItemPrice->BackColor = System::Drawing::Color::Yellow;
-			this->btnSetItemPrice->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnSetItemPrice->Location = System::Drawing::Point(3, 267);
-			this->btnSetItemPrice->Name = L"btnSetItemPrice";
-			this->btnSetItemPrice->Size = System::Drawing::Size(459, 60);
-			this->btnSetItemPrice->TabIndex = 4;
-			this->btnSetItemPrice->Text = L"Set Item price";
-			this->btnSetItemPrice->UseVisualStyleBackColor = false;
-			// 
-			// btnSetItemDescription
-			// 
-			this->btnSetItemDescription->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->btnSetItemDescription->BackColor = System::Drawing::Color::Yellow;
-			this->btnSetItemDescription->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 12, System::Drawing::FontStyle::Regular,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->btnSetItemDescription->Location = System::Drawing::Point(3, 201);
-			this->btnSetItemDescription->Name = L"btnSetItemDescription";
-			this->btnSetItemDescription->Size = System::Drawing::Size(459, 60);
-			this->btnSetItemDescription->TabIndex = 3;
-			this->btnSetItemDescription->Text = L"Set item description";
-			this->btnSetItemDescription->UseVisualStyleBackColor = false;
-			// 
-			// btnSetItemAvailability
-			// 
-			this->btnSetItemAvailability->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->btnSetItemAvailability->BackColor = System::Drawing::Color::Yellow;
-			this->btnSetItemAvailability->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 12, System::Drawing::FontStyle::Regular,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->btnSetItemAvailability->Location = System::Drawing::Point(3, 135);
-			this->btnSetItemAvailability->Name = L"btnSetItemAvailability";
-			this->btnSetItemAvailability->Size = System::Drawing::Size(459, 60);
-			this->btnSetItemAvailability->TabIndex = 2;
-			this->btnSetItemAvailability->Text = L"Set item availability";
-			this->btnSetItemAvailability->UseVisualStyleBackColor = false;
+			this->btnUpdateItem->Location = System::Drawing::Point(3, 271);
+			this->btnUpdateItem->Name = L"btnUpdateItem";
+			this->btnUpdateItem->Size = System::Drawing::Size(459, 128);
+			this->btnUpdateItem->TabIndex = 2;
+			this->btnUpdateItem->Text = L"Update item info";
+			this->btnUpdateItem->UseVisualStyleBackColor = false;
+			this->btnUpdateItem->Click += gcnew System::EventHandler(this, &editMenuForm::btnUpdateItem_Click);
 			// 
 			// btnRemoveItem
 			// 
@@ -250,9 +202,9 @@ namespace WeServeU {
 			this->btnRemoveItem->BackColor = System::Drawing::Color::Yellow;
 			this->btnRemoveItem->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnRemoveItem->Location = System::Drawing::Point(3, 69);
+			this->btnRemoveItem->Location = System::Drawing::Point(3, 137);
 			this->btnRemoveItem->Name = L"btnRemoveItem";
-			this->btnRemoveItem->Size = System::Drawing::Size(459, 60);
+			this->btnRemoveItem->Size = System::Drawing::Size(459, 128);
 			this->btnRemoveItem->TabIndex = 1;
 			this->btnRemoveItem->Text = L"Remove Item";
 			this->btnRemoveItem->UseVisualStyleBackColor = false;
@@ -268,7 +220,7 @@ namespace WeServeU {
 				static_cast<System::Byte>(0)));
 			this->btnAddItem->Location = System::Drawing::Point(3, 3);
 			this->btnAddItem->Name = L"btnAddItem";
-			this->btnAddItem->Size = System::Drawing::Size(459, 60);
+			this->btnAddItem->Size = System::Drawing::Size(459, 128);
 			this->btnAddItem->TabIndex = 0;
 			this->btnAddItem->Text = L"Add item";
 			this->btnAddItem->UseVisualStyleBackColor = false;
@@ -417,15 +369,9 @@ private: System::Void btnAddItem_Click(System::Object^ sender, System::EventArgs
 	this->lbEditMenu->Text = "Add Item";
 
 	this->lbItemName->Show();
-
 	this->lbItemDetail1->Show();
-	this->lbItemDetail1->Text = "Item description";
-
 	this->lbItemDetail2->Show();
-	this->lbItemDetail2->Text = "Item price";
-
 	this->lbItemDetail3->Show();
-	this->lbItemDetail3->Text = "Item availability";
 
 	this->tbItemName->Show();
 	this->tbItemDetail1->Show();
@@ -435,6 +381,7 @@ private: System::Void btnAddItem_Click(System::Object^ sender, System::EventArgs
 	this->btnNo->Show();
 
 	this->btnDone->Show();
+	this->btnDone->Text = "Add Item";
 	this->btnBack->Text = "Back";
 
 }
@@ -449,11 +396,13 @@ private: System::Void btnRemoveItem_Click(System::Object^ sender, System::EventA
 	this->tbItemName->Show();
 
 	this->btnDone->Show();
+	this->btnDone->Text = "Remove Item";
 	this->btnBack->Text = "Back";
 }
 private: System::Void resetScreen()
 {
 	resetFieldsText();
+	this->lbEditMenu->Text = "Edit Menu";
 	this->lbEditMenu->Show();
 	this->tableLayoutPanel1->Show();
 	this->lbItemName->Hide();
@@ -551,6 +500,47 @@ private: System::Void btnDone_Click(System::Object^ sender, System::EventArgs^ e
 			}
 		}
 	}
+	else // Update Item Info
+	{
+		// For add item all field must be filled by the user
+		if (System::String::IsNullOrEmpty(tbItemName->Text) || System::String::IsNullOrEmpty(tbItemDetail1->Text)
+			|| System::String::IsNullOrEmpty(this->tbItemDetail2->Text))
+		{
+			throw gcnew System::Exception("All fields must be filled!");
+		}
+		else // All fields are filled with data at this point
+		{
+
+			// check if the item is already saved on the system
+			if (isItemPresentInFile(this->tbItemName->Text))
+			{
+				if (this->btnYes->BackColor == System::Drawing::SystemColors::ControlLightLight)
+				{
+					isProcessCompleted = updateItemInFile(this->tbItemName->Text, this->tbItemDetail1->Text, System::Convert::ToDouble(this->tbItemDetail2->Text), false);
+				}
+				else
+				{
+					isProcessCompleted = updateItemInFile(this->tbItemName->Text, this->tbItemDetail1->Text, System::Convert::ToDouble(this->tbItemDetail2->Text), true);
+
+				}
+
+				if (isProcessCompleted)
+				{
+					MessageBox::Show("Item info is update successfully");
+					resetFieldsText();
+				}
+				else
+				{
+					throw gcnew System::Exception("Process is not completed !!");
+				}
+			}
+			else
+			{
+				throw gcnew System::Exception("Item not found!");
+				resetFieldsText();
+			}
+		}
+	}
 
 }
 private: System::Void btnYes_Click(System::Object^ sender, System::EventArgs^ e) 
@@ -575,6 +565,29 @@ private: System::Void btnBack_Click(System::Object^ sender, System::EventArgs^ e
 	{
 		this->resetScreen();
 	}
+}
+private: System::Void btnUpdateItem_Click(System::Object^ sender, System::EventArgs^ e) 
+{
+	this->resetScreen();
+
+	this->tableLayoutPanel1->Hide();
+	this->lbEditMenu->Text = "Update Item Info";
+
+	this->lbItemName->Show();
+	this->lbItemDetail1->Show();
+	this->lbItemDetail2->Show();
+	this->lbItemDetail3->Show();
+
+	this->tbItemName->Show();
+	this->tbItemDetail1->Show();
+	this->tbItemDetail2->Show();
+
+	this->btnYes->Show();
+	this->btnNo->Show();
+
+	this->btnDone->Show();
+	this->btnDone->Text = "Update Item";
+	this->btnBack->Text = "Back";
 }
 };
 }

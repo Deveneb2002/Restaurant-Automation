@@ -81,6 +81,44 @@ bool removeItemFromFile(String^ name)
 	return userFound;
 }
 
+bool updateItemInFile(String^ name, String^ descrip, double price, bool avail)
+{
+	bool userFound = false;
+	System::String^ builder = "";
+	System::String^ currentLine;
+
+	StreamReader^ reader = gcnew StreamReader("menu.txt");
+
+	if (!reader)
+		return false;
+
+	while (!reader->EndOfStream)
+	{
+		currentLine = reader->ReadLine() + "\n";
+		if (!currentLine->StartsWith(name))
+		{
+			builder = builder + currentLine;
+		}
+		else
+		{
+			if (avail)
+				builder = builder + name + " \"" + descrip + "\" " + Convert::ToString(price) + " Available" + "\n";
+			else
+				builder = builder + name + " \"" + descrip + "\" " + Convert::ToString(price) + " NotAvailable" + "\n";
+
+			userFound = true;
+		}
+	}
+
+	reader->Close();
+	StreamWriter^ writer = gcnew StreamWriter("menu.txt");
+
+	writer->Write(builder);
+	writer->Close();
+	reader->Close();
+	return userFound;
+}
+
 //StreamReader^ reader = gcnew StreamReader("menu.txt");
 //String^ ourLine = reader->ReadLine();
 //
