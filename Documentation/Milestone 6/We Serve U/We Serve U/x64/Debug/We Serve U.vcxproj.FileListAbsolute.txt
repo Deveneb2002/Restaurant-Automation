@@ -16,3 +16,12 @@ C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Miles
 C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.managerForm.resources
 C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.waitstaffForm.resources
 C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.manageEmployeeForm.resources
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.AssemblyReference.cache
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.SuggestedBindingRedirects.cache
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.chefForm.resources
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.guestForm.resources
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.loginForm.resources
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.manageEmployeeForm.resources
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.managerForm.resources
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.waitstaffForm.resources
+C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.GenerateResource.cache
