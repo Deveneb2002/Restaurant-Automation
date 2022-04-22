@@ -1,3 +1,2 @@
 Milk "Comes from a cow!" 2.99 Available
 Chocolate Cake "It's just the boxed stuff, but we frosted it in the store so we say it's homemade" 9 Available
-
