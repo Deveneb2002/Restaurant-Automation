@@ -2,24 +2,24 @@
 #include <iostream>
 using namespace std;
 
-class Node {
+ref class Node {
 public:
-	Node(string n, string d, double p, bool a);
+	Node(System::String^ n, System::String^ d, double p, bool a);
 	~Node();
-	string getName() const;
-	string getDescription() const;
-	double getPrice() const;
-	bool getAvailability() const;
-	Node* getNext() const;
-	void setName(string n);
-	void setDescription(string d);
+	System::String^ getName();
+	System::String^ getDescription();
+	double getPrice();
+	bool getAvailability();
+	Node^ getNext();
+	void setName(System::String^ n);
+	void setDescription(System::String^ d);
 	void setPrice(double p);
 	void setAvailability(bool a);
-	void setNext(Node* ptr);
+	void setNext(Node^ ptr);
 private:
-	string name;
-	string description;
+	System::String^ name;
+	System::String^ description;
 	double price;
 	bool availability;
-	Node* pNext;
+	Node^ pNext;
 };

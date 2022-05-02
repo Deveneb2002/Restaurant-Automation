@@ -8,70 +8,34 @@ LinkedList::~LinkedList() {
 	deleteList(pHead);
 }
 
-Node* LinkedList::getHead() const {
+Node^ LinkedList::getHead(){
 	return pHead;
 }
 
-bool LinkedList::insertFront(string n, string d, double p, bool a) {
-	Node* pMem = new Node(n, d, p, a);
-	if (pMem != nullptr) 
-	{
+void LinkedList::insertFront(System::String^ n, System::String^ d, double p, bool a) {
+	Node^ pMem = gcnew Node(n, d, p, a);
+	if (pMem != nullptr) {
 		pMem->setNext(pHead);
 		pHead = pMem;
-		return true;
 	}
-	return false;
 }
 
-bool LinkedList::deleteItem(const string n) 
-{
-	Node* pMem = pHead;
-	Node* pPrev = nullptr;
-	bool isDeleted = false;
-	if (pMem != nullptr) 
-	{
+void LinkedList::deleteItem(const System::String^ n) {
+	Node^ pMem = pHead;
+	Node^ pPrev = nullptr;
+
+	if (pMem != nullptr) {
 		while (pMem->getName() != n) {
 			pPrev = pMem;
 			pMem = pMem->getNext();
 		}
-		if (pMem->getName() == n)
-		{
-			pPrev->setNext(pMem->getNext());
-			isDeleted = true;
-		}
-		else // it should be null
-		{
-			isDeleted = false;
-		}
 
+		pPrev->setNext(pMem->getNext());
 		delete pMem;
 	}
-	return isDeleted;
 }
 
-bool LinkedList::isPresentOnMenu(const string n)
-{
-	Node* pMem = pHead;
-	Node* pPrev = nullptr;
-
-	if (pMem != nullptr)
-	{
-		if (pMem->getName() == n)
-			return true;
-
-		while (pMem->getName() != n) 
-		{
-			pPrev = pMem;
-			pMem = pMem->getNext();
-			if (pMem->getName() == n)
-				return true;
-		}
-		
-	}
-	return false;
-}
-
-void LinkedList::deleteList(Node* pCur) {
+void LinkedList::deleteList(Node^ pCur) {
 	if (pCur != nullptr) {
 		deleteList(pCur->getNext());
 		delete pCur;

@@ -1,6 +1,6 @@
 #pragma once
 #include "isValidLogin.h"
-#include "manageEmployeeEngine.h"
+#include "managerEngine.h"
 
 namespace WeServeU {
 
@@ -96,9 +96,9 @@ namespace WeServeU {
 				static_cast<System::Byte>(0)));
 			this->lbManageEmployees->Location = System::Drawing::Point(21, 25);
 			this->lbManageEmployees->Name = L"lbManageEmployees";
-			this->lbManageEmployees->Size = System::Drawing::Size(385, 50);
+			this->lbManageEmployees->Size = System::Drawing::Size(431, 50);
 			this->lbManageEmployees->TabIndex = 0;
-			this->lbManageEmployees->Text = L"Manage employees";
+			this->lbManageEmployees->Text = L"Managage employees";
 			// 
 			// tableLayoutPanel1
 			// 
@@ -219,9 +219,9 @@ namespace WeServeU {
 			this->lbEmployeeName->ForeColor = System::Drawing::SystemColors::HotTrack;
 			this->lbEmployeeName->Location = System::Drawing::Point(28, 352);
 			this->lbEmployeeName->Name = L"lbEmployeeName";
-			this->lbEmployeeName->Size = System::Drawing::Size(312, 39);
+			this->lbEmployeeName->Size = System::Drawing::Size(250, 39);
 			this->lbEmployeeName->TabIndex = 5;
-			this->lbEmployeeName->Text = L"employee username";
+			this->lbEmployeeName->Text = L"employee name";
 			// 
 			// tbEmployeeName
 			// 
@@ -338,16 +338,18 @@ private: System::Void btnDone_Click(System::Object^ sender, System::EventArgs^ e
 	{
 		if (btnDone->Text == "Register")
 		{
-			throw gcnew System::Exception("Empty field/s need to be filled in !");
-			resetTextFields();
+			MessageBox::Show("Please input a username and password");
+		}
+		else // remove mode
+		{
+			passEntering = true;
 		}
 	}
 	else if (System::String::IsNullOrEmpty(tbEmployeePass->Text))
 	{
 		if (lbManageEmployees->Text == "Register employees")
 		{
-			throw gcnew System::Exception("Empty field/s need to be filled in !");
-			resetTextFields();
+			MessageBox::Show("Please input a username and password");
 		}
 		else // remove mode
 		{
@@ -369,7 +371,7 @@ private: System::Void btnDone_Click(System::Object^ sender, System::EventArgs^ e
 			if (btnDone->Text == "Register")
 			{
 				MessageBox::Show("There is an existing user with these credentials");
-				resetTextFields();
+
 			}
 			else // remove employees
 			{
@@ -378,13 +380,11 @@ private: System::Void btnDone_Click(System::Object^ sender, System::EventArgs^ e
 				{
 					RemoveEmployee("chef", tbEmployeeName->Text);
 					MessageBox::Show("Chef user removed successfully");
-					resetTextFields();
 				}
 				else
 				{
 					RemoveEmployee("waiter", tbEmployeeName->Text);
 					MessageBox::Show("Wait staff user removed successfully");
-					resetTextFields();
 				}
 			}
 		}
@@ -398,27 +398,23 @@ private: System::Void btnDone_Click(System::Object^ sender, System::EventArgs^ e
 				{
 					RegisterEmployee("waiter", tbEmployeeName->Text, tbEmployeePass->Text);
 					MessageBox::Show("Wait staff user added successfully");
-					resetTextFields();
 				}
 				else
 				{
 					RegisterEmployee("chef", tbEmployeeName->Text, tbEmployeePass->Text);
 					MessageBox::Show("Chef user added successfully");
-					resetTextFields();
 				}
 			}
 			else // remove employess
 			{
 				throw gcnew System::Exception("User not found!");
-				resetTextFields();
 			}
 		}
 	}
 	// If the entered user credentials are not saved on the system
 	else
 	{
-		throw gcnew System::Exception("Empty field/s need to be filled in !");
-		resetTextFields();
+		MessageBox::Show("One or more boxes are missing values");
 	}
 	// reset text boxes
 	this->tbEmployeeName->Text = "";
@@ -454,30 +450,20 @@ private: System::Void btnBack_Click(System::Object^ sender, System::EventArgs^ e
 {
 	if (btnBack->Text == "Back")
 	{
-		resetScreen();
+		this->lbManageEmployees->Text = "Managage employees";
+		this->tableLayoutPanel1->Show();
+		this->btnDone->Hide();
+		this->tableLayoutPanel2->Hide();
+		this->lbEmployeeName->Hide();
+		this->tbEmployeeName->Hide();
+		this->lbEmployeePass->Hide();
+		this->tbEmployeePass->Hide();
+		this->btnBack->Text = "Back to Menu";
 	}
 	else // Back to main
 	{
 		this->Hide();
 	}
-}
-private: System::Void resetScreen()
-{
-	this->lbManageEmployees->Text = "Managage employees";
-	this->tableLayoutPanel1->Show();
-	this->btnDone->Hide();
-	this->tableLayoutPanel2->Hide();
-	this->lbEmployeeName->Hide();
-	this->tbEmployeeName->Hide();
-	this->lbEmployeePass->Hide();
-	this->tbEmployeePass->Hide();
-	this->btnBack->Text = "Back to Menu";
-}
-
-private: System::Void resetTextFields()
-{
-	this->tbEmployeeName->Text = "";
-	this->tbEmployeePass->Text = "";
 }
 };
 }

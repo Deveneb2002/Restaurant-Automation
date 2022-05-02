@@ -1,24 +1,158 @@
-﻿  guestForm.cpp
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(204,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(208,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(212,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+﻿  chefForm.cpp
+  editMenuEngine.cpp
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3265: cannot declare a managed 'pHead' in an unmanaged 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+  editMenuForm.cpp
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3265: cannot declare a managed 'pHead' in an unmanaged 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+  guestForm.cpp
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3265: cannot declare a managed 'pHead' in an unmanaged 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C3699: '^': cannot use this indirection on type 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): message : compiler replacing '^' with '*' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C2726: 'gcnew' may only be used to create an object with managed type
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
   isValidLogin.cpp
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\isValidLogin.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(204,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(208,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(212,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\isValidLogin.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3265: cannot declare a managed 'pHead' in an unmanaged 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C3699: '^': cannot use this indirection on type 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): message : compiler replacing '^' with '*' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C2726: 'gcnew' may only be used to create an object with managed type
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
+  Item.cpp
   loginForm.cpp
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(204,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(208,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(212,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3265: cannot declare a managed 'pHead' in an unmanaged 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C3699: '^': cannot use this indirection on type 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): message : compiler replacing '^' with '*' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C2726: 'gcnew' may only be used to create an object with managed type
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
   manageEmployeeForm.cpp
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(204,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(208,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(212,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3265: cannot declare a managed 'pHead' in an unmanaged 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C3699: '^': cannot use this indirection on type 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): message : compiler replacing '^' with '*' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C2726: 'gcnew' may only be used to create an object with managed type
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
+  manageEmployeeEngine.cpp
   managerForm.cpp
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(204,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(208,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(212,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3265: cannot declare a managed 'pHead' in an unmanaged 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C3699: '^': cannot use this indirection on type 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): message : compiler replacing '^' with '*' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(228,1): error C2726: 'gcnew' may only be used to create an object with managed type
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(251,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,1): error C2664: 'bool LinkedList::insertFront(std::string,std::string,double,bool)': cannot convert argument 1 from 'System::String ^' to 'std::string'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\guestForm.h(255,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(9,7): message : see declaration of 'LinkedList::insertFront'
+  Menu.cpp
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(8,23): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(12,28): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): error C3265: cannot declare a managed 'pHead' in an unmanaged 'LinkedList'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.hpp(14,13): message : may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(11,35): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(11,35): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(16,15): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(16,15): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(16,35): error C2750: 'Node': cannot use 'new' on the reference type; use 'gcnew' instead
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(16,35): error C2664: 'Node::Node(System::String ^,System::String ^,double,bool)': cannot convert argument 1 from 'std::string' to 'System::String ^'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(16,35): message : No user-defined-conversion operator available, or
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(16,24): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Item.hpp(7,2): message : see declaration of 'Node::Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(28,15): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(28,15): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(29,16): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(29,16): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(33,30): error C2446: '!=': no conversion from 'const std::string' to 'System::String ^'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(33,30): message : No user-defined-conversion operator available, or
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(33,29): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(37,27): error C2446: '==': no conversion from 'const std::string' to 'System::String ^'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(37,27): message : No user-defined-conversion operator available, or
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(37,26): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(54,15): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(54,15): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(55,16): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(55,16): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(59,27): error C2446: '==': no conversion from 'const std::string' to 'System::String ^'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(59,27): message : No user-defined-conversion operator available, or
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(59,26): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(62,30): error C2446: '!=': no conversion from 'const std::string' to 'System::String ^'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(62,30): message : No user-defined-conversion operator available, or
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(62,29): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(66,28): error C2446: '==': no conversion from 'const std::string' to 'System::String ^'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(66,28): message : No user-defined-conversion operator available, or
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(66,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(74,39): error C3699: '*': cannot use this indirection on type 'Node'
+C:\Users\Mohammed\Desktop\MyRep\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\Menu.cpp(74,39): message : compiler replacing '*' with '^' to continue parsing
+  waitstaffForm.cpp
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Generating Code...
-  chefForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  We Serve U.vcxproj -> C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\x64\Debug\We Serve U.exe

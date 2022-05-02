@@ -23,9 +23,7 @@ namespace WeServeU {
 		loginForm(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: Add the constructor code here
-			//
+			//FileSystemWatcher^ watcher = gcnew FileSystemWatcher("\\menu.txt");
 		}
 
 	protected:
@@ -80,10 +78,10 @@ namespace WeServeU {
 			this->btnLogin->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btnLogin->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnLogin->Location = System::Drawing::Point(60, 694);
-			this->btnLogin->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->btnLogin->Location = System::Drawing::Point(30, 361);
+			this->btnLogin->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->btnLogin->Name = L"btnLogin";
-			this->btnLogin->Size = System::Drawing::Size(558, 62);
+			this->btnLogin->Size = System::Drawing::Size(279, 32);
 			this->btnLogin->TabIndex = 0;
 			this->btnLogin->Text = L"Log In";
 			this->btnLogin->UseVisualStyleBackColor = false;
@@ -95,10 +93,10 @@ namespace WeServeU {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->btnContinueAsGuest->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnContinueAsGuest->Location = System::Drawing::Point(60, 633);
-			this->btnContinueAsGuest->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->btnContinueAsGuest->Location = System::Drawing::Point(30, 329);
+			this->btnContinueAsGuest->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->btnContinueAsGuest->Name = L"btnContinueAsGuest";
-			this->btnContinueAsGuest->Size = System::Drawing::Size(558, 50);
+			this->btnContinueAsGuest->Size = System::Drawing::Size(279, 26);
 			this->btnContinueAsGuest->TabIndex = 1;
 			this->btnContinueAsGuest->Text = L"Continue As Guest";
 			this->btnContinueAsGuest->UseVisualStyleBackColor = true;
@@ -111,10 +109,10 @@ namespace WeServeU {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(58, 525);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(29, 273);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(144, 31);
+			this->label1->Size = System::Drawing::Size(72, 17);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Username:";
 			// 
@@ -125,10 +123,10 @@ namespace WeServeU {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(58, 587);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(29, 305);
+			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(137, 31);
+			this->label2->Size = System::Drawing::Size(69, 17);
 			this->label2->TabIndex = 3;
 			this->label2->Text = L"Password:";
 			// 
@@ -138,10 +136,10 @@ namespace WeServeU {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->tbxUsername->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->tbxUsername->Location = System::Drawing::Point(203, 525);
-			this->tbxUsername->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->tbxUsername->Location = System::Drawing::Point(102, 273);
+			this->tbxUsername->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->tbxUsername->Name = L"tbxUsername";
-			this->tbxUsername->Size = System::Drawing::Size(407, 38);
+			this->tbxUsername->Size = System::Drawing::Size(206, 23);
 			this->tbxUsername->TabIndex = 4;
 			// 
 			// tbxPassword
@@ -150,33 +148,32 @@ namespace WeServeU {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->tbxPassword->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->tbxPassword->Location = System::Drawing::Point(203, 584);
-			this->tbxPassword->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->tbxPassword->Location = System::Drawing::Point(102, 304);
+			this->tbxPassword->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->tbxPassword->Name = L"tbxPassword";
-			this->tbxPassword->Size = System::Drawing::Size(407, 38);
+			this->tbxPassword->Size = System::Drawing::Size(206, 23);
 			this->tbxPassword->TabIndex = 5;
 			this->tbxPassword->UseSystemPasswordChar = true;
 			this->tbxPassword->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &loginForm::Enter);
 			// 
 			// label3
 			// 
-			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 13.875F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::SystemColors::MenuHighlight;
-			this->label3->Location = System::Drawing::Point(90, 46);
+			this->label3->Location = System::Drawing::Point(45, 24);
+			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(546, 50);
+			this->label3->Size = System::Drawing::Size(281, 26);
 			this->label3->TabIndex = 6;
 			this->label3->Text = L"Restaurant Automation App";
 			// 
 			// loginForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(706, 814);
+			this->ClientSize = System::Drawing::Size(353, 423);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->tbxPassword);
 			this->Controls->Add(this->tbxUsername);
@@ -184,9 +181,10 @@ namespace WeServeU {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->btnContinueAsGuest);
 			this->Controls->Add(this->btnLogin);
-			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->Name = L"loginForm";
 			this->Text = L"loginForm";
+			this->Load += gcnew System::EventHandler(this, &loginForm::loginForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -248,5 +246,7 @@ namespace WeServeU {
 			btnLogin_Click(sender, e);
 		}
 	}
+private: System::Void loginForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
