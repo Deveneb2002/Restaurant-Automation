@@ -12,7 +12,7 @@ If you are getting a lot of error messages, try running it through visual studio
 2) Go to Documentation/Milestone 6/We Serve U
 3) Open "We Serve U.sln"
 4) Go to Debug > Start Without Debugging (Usually Ctrl + F5)
-5) If that doesn't work, you may be running VS 2022. To fix this select "Visual Studio 2022 (v143)" from the dropdown menu in Project > Properties > Configuration Properties/General > Platform Toolset.
+5) If that doesn't work, you may be running VS 2022. To fix this select "Visual Studio 2022 (v143)" from the dropdown menu in Project > We Serve U Properties > Configuration Properties/General > Platform Toolset.
 6) Now try step 4.
 
 Members
