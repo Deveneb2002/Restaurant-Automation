@@ -1,9 +1,1 @@
-﻿  guestForm.cpp
-  isValidLogin.cpp
-C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\isValidLogin.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  loginForm.cpp
-  manageEmployeeForm.cpp
-  managerForm.cpp
-  Generating Code...
-  chefForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  We Serve U.vcxproj -> C:\Users\olive\Documents\My Schoolwork\Restaurant-Automation\Documentation\Milestone 6\We Serve U\x64\Debug\We Serve U.exe
+﻿  We Serve U.vcxproj -> C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\x64\Debug\We Serve U.exe

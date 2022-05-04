@@ -44,7 +44,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -121,6 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chefForm.cpp" />
+    <ClCompile Include="editMenuEngine.cpp" />
+    <ClCompile Include="editMenuForm.cpp" />
     <ClCompile Include="guestForm.cpp" />
     <ClCompile Include="isValidLogin.cpp" />
     <ClCompile Include="Item.cpp" />
@@ -135,6 +137,8 @@
     <ClInclude Include="chefForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="editMenuEngine.h" />
+    <ClInclude Include="editMenuForm.h" />
     <ClInclude Include="guestForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

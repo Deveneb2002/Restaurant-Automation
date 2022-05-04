@@ -25,3 +25,11 @@ C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We 
 C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.managerForm.resources
 C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.waitstaffForm.resources
 C:\Subham\Development\GitHub\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.GenerateResource.cache
+C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.AssemblyReference.cache
+C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.chefForm.resources
+C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.guestForm.resources
+C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.loginForm.resources
+C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.manageEmployeeForm.resources
+C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.managerForm.resources
+C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\WeServeU.waitstaffForm.resources
+C:\Users\Mohammed\Desktop\main\Restaurant-Automation\Documentation\Milestone 6\We Serve U\We Serve U\x64\Debug\We Serve U.vcxproj.GenerateResource.cache

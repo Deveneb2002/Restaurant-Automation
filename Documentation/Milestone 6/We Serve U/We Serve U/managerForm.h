@@ -1,6 +1,7 @@
 #pragma once
 #include "managerEngine.h"
 #include "manageEmployeeForm.h"
+#include "editMenuForm.h"
 namespace WeServeU {
 
 	//using namespace System;
@@ -98,6 +99,7 @@ namespace WeServeU {
 			this->btnEditMenu->TabIndex = 2;
 			this->btnEditMenu->Text = L"Edit Menu";
 			this->btnEditMenu->UseVisualStyleBackColor = false;
+			this->btnEditMenu->Click += gcnew System::EventHandler(this, &managerForm::btnEditMenu_Click);
 			// 
 			// btnSeeAnalytics
 			// 
@@ -166,5 +168,10 @@ namespace WeServeU {
 		WeServeU::manageEmployeeForm newForm;
 		newForm.ShowDialog();
 	}
+private: System::Void btnEditMenu_Click(System::Object^ sender, System::EventArgs^ e) 
+{
+	WeServeU::editMenuForm menuForm;
+	menuForm.ShowDialog();
+}
 };
 }
